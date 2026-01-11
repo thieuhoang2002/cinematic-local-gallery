@@ -26,9 +26,10 @@ export function getVideoSrc(src: string): string {
   if (src.startsWith('http') || src.startsWith('data:')) {
     return src;
   }
-  
-  // Encode the path
-  return encodeMediaUrl(src);
+  // Prefix with Vite base URL for GitHub Pages and encode
+  const base = (import.meta as any).env?.BASE_URL ?? '/';
+  const path = src.startsWith('/') ? src.slice(1) : src;
+  return encodeMediaUrl(base + path);
 }
 
 /**
@@ -39,7 +40,8 @@ export function getImageSrc(src: string): string {
   if (src.startsWith('http') || src.startsWith('data:')) {
     return src;
   }
-  
-  // Encode the path
-  return encodeMediaUrl(src);
+  // Prefix with Vite base URL for GitHub Pages and encode
+  const base = (import.meta as any).env?.BASE_URL ?? '/';
+  const path = src.startsWith('/') ? src.slice(1) : src;
+  return encodeMediaUrl(base + path);
 }

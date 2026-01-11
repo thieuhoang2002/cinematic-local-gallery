@@ -130,7 +130,7 @@ const VideoThumbnail: React.FC<VideoThumbnailProps> = ({ src, thumbnailUrl, alt,
       </video>
       {thumbnail ? (
         <img
-          src={thumbnail}
+          src={getImageSrc(thumbnail)}
           alt={alt}
           className={className}
         />
