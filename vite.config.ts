@@ -4,8 +4,9 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig(({ mode }) => {
     const env = loadEnv(mode, '.', '');
+    const isProd = mode === 'production';
     return {
-      base: '/cinematic-local-gallery/',
+      base: isProd ? '/cinematic-local-gallery/' : '/',
       publicDir: 'public',
       server: {
         port: 3000,
