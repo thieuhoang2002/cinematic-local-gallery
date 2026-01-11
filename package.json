@@ -1,0 +1,29 @@
+{
+  "name": "cinematic-local-gallery",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "server": "node server.cjs",
+    "thumbs:generate": "node scripts/generate-thumbnails.cjs",
+    "thumbs:update-db": "node scripts/update-db-thumbnails.cjs"
+  },
+  "dependencies": {
+    "lucide-react": "^0.562.0",
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3",
+    "react-virtualized-auto-sizer": "^2.0.0",
+    "react-window": "^2.2.3"
+  },
+  "devDependencies": {
+    "@types/node": "^22.14.0",
+    "@vitejs/plugin-react": "^5.0.0",
+    "ffmpeg-static": "^5.2.0",
+    "fluent-ffmpeg": "^2.1.2",
+    "typescript": "~5.8.2",
+    "vite": "^6.2.0"
+  }
+}
