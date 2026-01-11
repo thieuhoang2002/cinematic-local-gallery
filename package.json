@@ -1,8 +1,28 @@
 {
   "name": "cinematic-local-gallery",
-  "private": true,
-  "version": "0.0.0",
+  "description": "A beautiful, feature-rich local media gallery built with React, Vite, and Tailwind CSS. Includes video player, photo lightbox, admin panel, and auto-save functionality.",
+  "version": "1.0.0",
   "type": "module",
+  "private": false,
+  "homepage": "https://thieuhoang2002.github.io/cinematic-local-gallery/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thieuhoang2002/cinematic-local-gallery.git"
+  },
+  "bugs": {
+    "url": "https://github.com/thieuhoang2002/cinematic-local-gallery/issues"
+  },
+  "author": "Thieu Hoang",
+  "license": "MIT",
+  "keywords": [
+    "gallery",
+    "media",
+    "react",
+    "vite",
+    "video-player",
+    "photo-gallery",
+    "tailwindcss"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "vite build",
