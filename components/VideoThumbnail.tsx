@@ -1,5 +1,5 @@
 import React, { useRef, useEffect, useState } from 'react';
-import { getVideoSrc } from '../utils/mediaUrl';
+import { getVideoSrc, getImageSrc } from '../utils/mediaUrl';
 
 interface VideoThumbnailProps {
   src: string; // video src (fallback generation)
