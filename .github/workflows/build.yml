@@ -32,6 +32,13 @@ jobs:
         env:
           NODE_ENV: production
 
+      - name: List build output
+        run: |
+          echo "Listing dist folder contents:"
+          ls -la dist/
+          echo "Total files:"
+          find dist -type f | wc -l
+
       - name: Upload build artifact
         uses: actions/upload-pages-artifact@v3
         with:
